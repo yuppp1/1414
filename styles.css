@@ -1,0 +1,44 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #591a1a;
+    text-shadow: 2px 2px 4px rgba(255, 107, 107, 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heart {
+    font-size: 40px;
+    color: #e65fa9;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.2s ease;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
